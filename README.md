@@ -1,10 +1,9 @@
 ### Hi there 👋
 
-I am a pre-final year student currently studying in the MIT World Peace University, Pune
+I am a first year master's student at the University of Texas at Dallas
 - 🌱 I’m currently learning C, C++, Python and AI/ML...
 - 🎮 Learning Game Development using Unreal Engine, just for fun...
 - 🎨 I love to draw...
-- 📝 I write... [https://somethinginthemiddleofnothing.blogspot.com/](https://somethinginthemiddleofnothing.blogspot.com/)
 - 📫 How to reach me... **anagha12.langhe@gmail.com**
 
 ![Anagha's GitHub stats](https://github-readme-stats.vercel.app/api?username=ana-lan&show_icons=true&theme=tokyonight)
