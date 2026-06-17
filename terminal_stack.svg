@@ -1,0 +1,52 @@
+<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a10"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <pattern id="grid4" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0f2630" stroke-width="1"/>
+    </pattern>
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="wc4"><rect x="1" y="1" width="898" height="428" rx="10"/></clipPath>
+    <style>.mono { font-family: 'JetBrains Mono','Fira Code',Consolas,monospace; }</style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="428" rx="10" fill="none" stroke="#00d9ff" stroke-opacity="0.3" stroke-width="2" filter="url(#glow4)"/>
+
+  <g clip-path="url(#wc4)">
+    <rect x="1" y="1" width="898" height="428" fill="url(#bgGrad4)"/>
+    <rect x="1" y="1" width="898" height="428" fill="url(#grid4)"/>
+
+    <rect x="1" y="1" width="898" height="38" fill="#0d1620"/>
+    <line x1="1" y1="39" x2="899" y2="39" stroke="#163445" stroke-width="1"/>
+    <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+    <text x="450" y="25" text-anchor="middle" class="mono" font-size="13" fill="#5a7d8c">~/stack — ./scan.sh --verbose</text>
+
+    <g class="mono">
+      <text x="32" y="72" font-size="15" fill="#00e5ff">$ ./scan_stack.sh --verbose</text>
+
+      <text x="32" y="106" font-size="12.5" fill="#3f6271">[languages]</text>
+      <text x="32" y="128" font-size="14" fill="#dff4fb">Python · Java · C++ · JavaScript · SQL</text>
+
+      <text x="32" y="162" font-size="12.5" fill="#3f6271">[ml / ai]</text>
+      <text x="32" y="184" font-size="14" fill="#dff4fb">PyTorch · TensorFlow · scikit-learn · OpenCV</text>
+      <text x="32" y="206" font-size="14" fill="#dff4fb">HuggingFace · LangChain · ONNX Runtime</text>
+
+      <text x="32" y="240" font-size="12.5" fill="#3f6271">[data engineering / cloud]</text>
+      <text x="32" y="262" font-size="14" fill="#dff4fb">Kafka · Spark · Airflow · AWS · Hadoop · Databricks</text>
+
+      <text x="32" y="296" font-size="12.5" fill="#3f6271">[databases / tools]</text>
+      <text x="32" y="318" font-size="14" fill="#dff4fb">MySQL · MongoDB · Redis · Amazon S3</text>
+      <text x="32" y="340" font-size="14" fill="#dff4fb">Docker · Git · Linux</text>
+
+      <line x1="32" y1="364" x2="868" y2="364" stroke="#163445" stroke-width="1"/>
+      <text x="32" y="392" font-size="13" fill="#5fe3b3">scan complete — 0 errors, 21 tools indexed</text>
+    </g>
+  </g>
+</svg>

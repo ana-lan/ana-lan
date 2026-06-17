@@ -1,0 +1,59 @@
+<svg width="900" height="470" viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a10"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <pattern id="grid2" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0f2630" stroke-width="1"/>
+    </pattern>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="wc2"><rect x="1" y="1" width="898" height="468" rx="10"/></clipPath>
+    <style>
+      .mono { font-family: 'JetBrains Mono','Fira Code',Consolas,monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="468" rx="10" fill="none" stroke="#00d9ff" stroke-opacity="0.3" stroke-width="2" filter="url(#glow2)"/>
+
+  <g clip-path="url(#wc2)">
+    <rect x="1" y="1" width="898" height="468" fill="url(#bgGrad2)"/>
+    <rect x="1" y="1" width="898" height="468" fill="url(#grid2)"/>
+
+    <rect x="1" y="1" width="898" height="38" fill="#0d1620"/>
+    <line x1="1" y1="39" x2="899" y2="39" stroke="#163445" stroke-width="1"/>
+    <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+    <text x="450" y="25" text-anchor="middle" class="mono" font-size="13" fill="#5a7d8c">~/experience.log</text>
+
+    <g class="mono">
+      <text x="32" y="72" font-size="15" fill="#00e5ff">$ cat experience.log</text>
+
+      <text x="32" y="106" font-size="13" fill="#4a6a78">[2025-09 — present]</text>
+      <text x="32" y="128" font-size="15" fill="#dff4fb" font-weight="600">Teaching Assistant · Data Structures &amp; Algorithms</text>
+      <text x="32" y="148" font-size="13" fill="#5a7d8c">The University of Texas at Dallas</text>
+      <text x="48" y="170" font-size="13" fill="#5fe3b3">+ mentored 100&#43; students across Java / Python / C++ code reviews</text>
+      <text x="48" y="190" font-size="13" fill="#5fe3b3">+ redesigned grading rubrics across 3 courses</text>
+
+      <line x1="32" y1="212" x2="868" y2="212" stroke="#163445" stroke-width="1"/>
+
+      <text x="32" y="238" font-size="13" fill="#4a6a78">[2023-07 — 2023-12]</text>
+      <text x="32" y="260" font-size="15" fill="#dff4fb" font-weight="600">ML Intern · Sensor Fusion &amp; Autonomous Navigation</text>
+      <text x="32" y="280" font-size="13" fill="#5a7d8c">DRDO, India</text>
+      <text x="48" y="302" font-size="13" fill="#5fe3b3">+ LiDAR-camera perception pipeline on KITTI · sub-80ms/frame</text>
+      <text x="48" y="322" font-size="13" fill="#5fe3b3">+ −35% reprojection error · &#43;25% detection accuracy</text>
+
+      <line x1="32" y1="344" x2="868" y2="344" stroke="#163445" stroke-width="1"/>
+
+      <text x="32" y="370" font-size="13" fill="#4a6a78">[2022-07 — 2023-06]</text>
+      <text x="32" y="392" font-size="15" fill="#dff4fb" font-weight="600">ML Intern · Computer Vision &amp; IoT</text>
+      <text x="32" y="412" font-size="13" fill="#5a7d8c">MIT-WPU × Capgemini, India</text>
+      <text x="48" y="434" font-size="13" fill="#5fe3b3">+ real-time infant emotion CV pipeline · 86.09% test accuracy</text>
+      <text x="48" y="454" font-size="13" fill="#5fe3b3">+ filed Indian patent · deployed via Flutter + REST API</text>
+    </g>
+  </g>
+</svg>
