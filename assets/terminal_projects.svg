@@ -1,0 +1,70 @@
+<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a10"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <pattern id="grid3" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0f2630" stroke-width="1"/>
+    </pattern>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="wc3"><rect x="1" y="1" width="898" height="428" rx="10"/></clipPath>
+    <style>.mono { font-family: 'JetBrains Mono','Fira Code',Consolas,monospace; }</style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="428" rx="10" fill="none" stroke="#00d9ff" stroke-opacity="0.3" stroke-width="2" filter="url(#glow3)"/>
+
+  <g clip-path="url(#wc3)">
+    <rect x="1" y="1" width="898" height="428" fill="url(#bgGrad3)"/>
+    <rect x="1" y="1" width="898" height="428" fill="url(#grid3)"/>
+
+    <rect x="1" y="1" width="898" height="38" fill="#0d1620"/>
+    <line x1="1" y1="39" x2="899" y2="39" stroke="#163445" stroke-width="1"/>
+    <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+    <text x="450" y="25" text-anchor="middle" class="mono" font-size="13" fill="#5a7d8c">~/projects</text>
+
+    <g class="mono">
+      <text x="32" y="72" font-size="15" fill="#00e5ff">$ ls -la ./projects/</text>
+
+      <!-- column dividers -->
+      <line x1="450" y1="56" x2="450" y2="406" stroke="#163445" stroke-width="1"/>
+
+      <!-- left col -->
+      <text x="32" y="112" font-size="15" fill="#ffcc66" font-weight="600">documentsync-ai/</text>
+      <text x="32" y="134" font-size="12.5" fill="#8fb4c4">RAG document Q&amp;A — LangChain + ChromaDB</text>
+      <text x="32" y="154" font-size="12.5" fill="#5fe3b3">accuracy 71% → 85% · hallucination −18%</text>
+
+      <text x="32" y="196" font-size="15" fill="#ffcc66" font-weight="600">invasive-species-cnn/</text>
+      <text x="32" y="218" font-size="12.5" fill="#8fb4c4">Transfer-learned CNN for plant ID</text>
+      <text x="32" y="238" font-size="12.5" fill="#5fe3b3">91.9% accuracy · ONNX → 2.3× faster</text>
+
+      <text x="32" y="280" font-size="15" fill="#ffcc66" font-weight="600">crypto-stream-pipeline/</text>
+      <text x="32" y="302" font-size="12.5" fill="#8fb4c4">Kafka + Spark Streaming → Glue/Athena</text>
+      <text x="32" y="322" font-size="12.5" fill="#5fe3b3">10K+ records/hr · query latency −40%</text>
+
+      <text x="32" y="364" font-size="15" fill="#ffcc66" font-weight="600">distributed-url-shortener/</text>
+      <text x="32" y="386" font-size="12.5" fill="#8fb4c4">Node microservices + Redis + Mongo</text>
+      <text x="32" y="406" font-size="12.5" fill="#5fe3b3">3000+ req/hr · p99 85ms → 20ms</text>
+
+      <!-- right col -->
+      <text x="478" y="112" font-size="15" fill="#ffcc66" font-weight="600">codestreak/</text>
+      <text x="478" y="134" font-size="12.5" fill="#8fb4c4">Gamified coding-streak tracker</text>
+      <text x="478" y="154" font-size="12.5" fill="#5fe3b3">100+ active users · sub-200ms API</text>
+
+      <text x="478" y="196" font-size="15" fill="#ffcc66" font-weight="600">youtube-analytics-etl/</text>
+      <text x="478" y="218" font-size="12.5" fill="#8fb4c4">Serverless ETL — Glue + Lambda + S3</text>
+      <text x="478" y="238" font-size="12.5" fill="#5fe3b3">50K+ records · manual prep −80%</text>
+
+      <text x="478" y="280" font-size="15" fill="#ffcc66" font-weight="600">baby-sentry/</text>
+      <text x="478" y="302" font-size="12.5" fill="#8fb4c4">Smart-cradle CV + IoT system</text>
+      <text x="478" y="322" font-size="12.5" fill="#5fe3b3">IEEE ICETSIS 2024 · Indian patent filed</text>
+
+      <text x="478" y="364" font-size="13" fill="#3f6271">└─ more at github.com/ana-lan →</text>
+    </g>
+  </g>
+</svg>
