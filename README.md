@@ -30,7 +30,7 @@ MS CS @ UT Dallas (May 2026) &nbsp;·&nbsp; Dallas, TX
 <tr>
 <td width="50%" valign="top">
 
-**[ActivationLens](https://github.com/ana-lan/ActivationLens)**
+**[ActivationLens](https://github.com/ana-lan/activation-lens)**
 Mechanistic interpretability on GPT-2-small — trained a sparse autoencoder on the layer-6 residual stream, cut dead-feature collapse from ~80% to 0.77%, then built a live per-token safety monitor (0.758 AUROC) with a one-pass kernel that trimmed monitoring overhead 6x.
 
 `PyTorch` `TransformerLens` `SAE` `FastAPI` `Next.js`
@@ -48,7 +48,7 @@ GPT-5.6-powered tool that scores, diagnoses, and auto-tunes RAG pipeline outputs
 <tr>
 <td width="50%" valign="top">
 
-**[DocumentSync AI](https://github.com/ana-lan/DocumentSync-AI)**
+**[DocumentSync AI](https://github.com/ana-lan/DocumentSyncAI-RAG-based-QA-for-Documents)**
 RAG pipeline over 30 ArXiv papers across 4 chunking strategies, evaluated with RAGAS across 120 LLM-as-judge calls — best config improved context precision by 59% and recall 3x over baseline.
 
 `LangChain` `ChromaDB` `Sentence-Transformers` `Streamlit`
@@ -56,7 +56,7 @@ RAG pipeline over 30 ArXiv papers across 4 chunking strategies, evaluated with R
 </td>
 <td width="50%" valign="top">
 
-**[Real-Time Crypto Streaming Pipeline](https://github.com/ana-lan/crypto-streaming-pipeline)**
+**[Real-Time Crypto Streaming Pipeline](https://github.com/ana-lan/real-time-crypto-data-pipeline)**
 Streams live market data via Kafka + Spark Structured Streaming into a Redshift star schema, orchestrated with Airflow — cut Athena bytes scanned by 89%.
 
 `Kafka` `Spark` `Airflow` `AWS`
