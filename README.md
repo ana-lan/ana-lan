@@ -28,6 +28,16 @@ MS CS @ UT Dallas (May 2026) &nbsp;·&nbsp; Dallas, TX
 
 <table>
 <tr>
+<td colspan="2" valign="top">
+
+**[Downshift](https://github.com/ana-lan/downshift)** &nbsp;·&nbsp; [live demo](https://downshift-llm.vercel.app/) &nbsp;·&nbsp; [PyPI](https://pypi.org/project/downshift/)
+Cuts LLM costs per PR. Finds every LLM call in a Python repo, tests cheaper models against evals written for each call site, recommends the safe downgrades, and posts the projected monthly cost change on every pull request. On the demo app, 3 of 8 call sites downgraded for an 18% projected saving with pass rate held steady.
+
+`Python` `AST Analysis` `LLM Evals` `GitHub Actions` `IBM Bob`
+
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[ActivationLens](https://github.com/ana-lan/activation-lens)**
@@ -159,8 +169,8 @@ Streams live market data via Kafka + Spark Structured Streaming into a Redshift 
 
 <div align="center">
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ana-lan&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=818cf8&icon_color=818cf8&text_color=8b949e&border_color=30363d" height="180"/>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ana-lan&layout=compact&hide_border=true&langs_count=8&bg_color=0d1117&title_color=818cf8&text_color=8b949e&border_color=30363d" height="180"/>
+<img src="./profile/stats.svg" height="180"/>
+<img src="./profile/top-langs.svg" height="180"/>
 
 <img src="https://streak-stats.demolab.com/?user=ana-lan&hide_border=true&background=0d1117&ring=818cf8&fire=818cf8&currStreakLabel=818cf8&sideLabels=8b949e&sideNums=8b949e&dates=484f58&currStreakNum=e6edf3&sideAreaColor=0d1117&border=30363d"/>
 
