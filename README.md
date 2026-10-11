@@ -58,10 +58,9 @@ GPT-5.6-powered tool that scores, diagnoses, and auto-tunes RAG pipeline outputs
 <tr>
 <td width="50%" valign="top">
 
-**[DocumentSync AI](https://github.com/ana-lan/DocumentSyncAI-RAG-based-QA-for-Documents)**
-RAG pipeline over 30 ArXiv papers across 4 chunking strategies, evaluated with RAGAS across 120 LLM-as-judge calls — best config improved context precision by 59% and recall 3x over baseline.
+[DocumentSync AI](https://github.com/ana-lan/DocumentSyncAI-RAG-based-QA-for-Documents) RAG Q&A self-hosted with vLLM on GKE (NVIDIA L4). Continuous batching scaled throughput 17x, FP8 cut p95 latency 38% with no accuracy loss, and RAGAS evals across 4 chunking strategies lifted context precision 59% and recall 3.6x.
 
-`LangChain` `ChromaDB` `Sentence-Transformers` `Streamlit`
+`vLLM` `Kubernetes` `Docker` `GCP` `LangChain` `ChromaDB` `RAGAS`
 
 </td>
 <td width="50%" valign="top">
