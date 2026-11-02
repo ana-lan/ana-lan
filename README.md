@@ -2,7 +2,7 @@
 
 # Anagha Langhe
 
-**ML / Data Engineer** — building RAG systems, data pipelines, and poking at what's inside LLMs
+**ML / Data Engineer** &nbsp;·&nbsp; building RAG systems, serving LLMs, data pipelines, and poking at what's inside LLMs
 
 MS CS @ UT Dallas (May 2026) &nbsp;·&nbsp; Dallas, TX
 
@@ -17,10 +17,12 @@ MS CS @ UT Dallas (May 2026) &nbsp;·&nbsp; Dallas, TX
 
 ## Currently
 
-- 🔍 Digging into **mechanistic interpretability** — trained an SAE on GPT-2-small and built a live safety monitor from it
+- 🧑‍💻 Full-Stack Developer (volunteer) on **Saayam For All's** GenAI team, building Python microservices on AWS EKS with Kafka
+- 💸 Shipped **Downshift**, an open-source CLI + GitHub Action on PyPI that finds which LLM calls can safely move to cheaper models
+- 🔍 Digging into **mechanistic interpretability**: trained an SAE on GPT-2-small and built a live safety monitor from it
 - 🛠️ Shipped a **RAG evaluation tool** at an OpenAI hackathon (Build Week)
-- 💼 Past experience across ML (IoT/CV at MIT-WPU × Capgemini), data engineering (DRDO — LiDAR/camera perception pipelines), and TA'ing DSA at UT Dallas
-- 🎓 MS in Computer Science from UT Dallas, open to full-time **ML / Data Engineering** roles
+- 💼 Past experience across ML at DRDO (LiDAR-camera perception for an autonomous ground vehicle), real-time CV on edge devices at MIT-WPU × Capgemini, and TA'ing DSA at UT Dallas
+- 🎓 MS in Computer Science from UT Dallas, open to full-time **ML / Data / Software Engineering** roles
 
 <br>
 
@@ -31,9 +33,9 @@ MS CS @ UT Dallas (May 2026) &nbsp;·&nbsp; Dallas, TX
 <td colspan="2" valign="top">
 
 **[Downshift](https://github.com/ana-lan/downshift)** &nbsp;·&nbsp; [live demo](https://downshift-llm.vercel.app/) &nbsp;·&nbsp; [PyPI](https://pypi.org/project/downshift/)
-Cuts LLM costs per PR. Finds every LLM call in a Python repo, tests cheaper models against evals written for each call site, recommends the safe downgrades, and posts the projected monthly cost change on every pull request. On the demo app, 3 of 8 call sites downgraded for an 18% projected saving with pass rate held steady.
+Cuts LLM costs per PR. Finds every OpenAI and Anthropic call in a Python repo via AST analysis, tests cheaper models against evals written for each call site (181 cases), recommends the safe downgrades, and posts the projected monthly cost change on every pull request. On the demo app, 3 of 8 call sites downgraded for an 18% projected saving with pass rate held steady. On mem0 and OrchestrAI, the agent audit surfaced up to 7.6x more projected spend than static analysis alone.
 
-`Python` `AST Analysis` `LLM Evals` `GitHub Actions` `IBM Bob`
+`Python` `AST Analysis` `LLM Evals` `GitHub Actions` `Ollama` `IBM Bob`
 
 </td>
 </tr>
@@ -41,7 +43,7 @@ Cuts LLM costs per PR. Finds every LLM call in a Python repo, tests cheaper mode
 <td width="50%" valign="top">
 
 **[ActivationLens](https://github.com/ana-lan/activation-lens)**
-Mechanistic interpretability on GPT-2-small — trained a sparse autoencoder on the layer-6 residual stream, cut dead-feature collapse from ~80% to 0.77%, then built a live per-token safety monitor (0.758 AUROC) with a one-pass kernel that trimmed monitoring overhead 6x.
+Mechanistic interpretability on GPT-2-small: trained a sparse autoencoder on the layer-6 residual stream, cut dead-feature collapse from 52-82% to 0.77%, then built a live per-token safety monitor (0.758 AUROC, 91.6% recall) with a one-pass kernel that trimmed monitoring overhead 6x (4.12% to 0.66%).
 
 `PyTorch` `TransformerLens` `SAE` `FastAPI` `Next.js`
 
@@ -49,16 +51,17 @@ Mechanistic interpretability on GPT-2-small — trained a sparse autoencoder on 
 <td width="50%" valign="top">
 
 **[OpenAI Build Week](https://github.com/ana-lan/openai-build-week)**
-GPT-5.6-powered tool that scores, diagnoses, and auto-tunes RAG pipeline outputs — built with Codex during OpenAI's Build Week hackathon.
+GPT-5.6-powered tool that scores, diagnoses, and auto-tunes RAG pipeline outputs, built with Codex during OpenAI's Build Week hackathon.
 
-`Python` `OpenAI API` `RAG`
+`Python` `OpenAI API` `RAG` `LLM-as-Judge`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-[DocumentSync AI](https://github.com/ana-lan/DocumentSyncAI-RAG-based-QA-for-Documents) RAG Q&A self-hosted with vLLM on GKE (NVIDIA L4). Continuous batching scaled throughput 17x, FP8 cut p95 latency 38% with no accuracy loss, and RAGAS evals across 4 chunking strategies lifted context precision 59% and recall 3.6x.
+**[DocumentSync AI](https://github.com/ana-lan/DocumentSyncAI-RAG-based-QA-for-Documents)**
+RAG Q&A with Qwen2.5-7B self-hosted on vLLM on GKE (NVIDIA L4). Continuous batching scaled throughput 17x, FP8 cut p95 latency 38% with no accuracy loss, and RAGAS evals across 4 chunking strategies lifted context precision 59% and recall 3.6x.
 
 `vLLM` `Kubernetes` `Docker` `GCP` `LangChain` `ChromaDB` `RAGAS`
 
@@ -66,9 +69,9 @@ GPT-5.6-powered tool that scores, diagnoses, and auto-tunes RAG pipeline outputs
 <td width="50%" valign="top">
 
 **[Real-Time Crypto Streaming Pipeline](https://github.com/ana-lan/real-time-crypto-data-pipeline)**
-Streams live market data via Kafka + Spark Structured Streaming into a Redshift star schema, orchestrated with Airflow — cut Athena bytes scanned by 89%.
+Streams live market data via Kafka + Spark Structured Streaming into a Redshift star schema, orchestrated with Airflow. Ran 72 hours continuously landing ~468K records, with dead-letter routing and alerts within 5 minutes; cut Athena bytes scanned by 89%.
 
-`Kafka` `Spark` `Airflow` `AWS`
+`Kafka` `Spark` `Airflow` `AWS` `Redshift`
 
 </td>
 </tr>
@@ -96,10 +99,13 @@ Streams live market data via Kafka + Spark Structured Streaming into a Redshift 
 ![Pandas](https://img.shields.io/badge/-Pandas-0d1117?style=flat-square&logo=pandas&logoColor=818cf8)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-0d1117?style=flat-square&logo=opencv&logoColor=818cf8)
 ![Hugging Face](https://img.shields.io/badge/-Hugging_Face-0d1117?style=flat-square&logo=huggingface&logoColor=818cf8)
+![vLLM](https://img.shields.io/badge/-vLLM-0d1117?style=flat-square)
 ![LangChain](https://img.shields.io/badge/-LangChain-0d1117?style=flat-square)
 ![RAG](https://img.shields.io/badge/-RAG-0d1117?style=flat-square)
 ![GenAI](https://img.shields.io/badge/-GenAI-0d1117?style=flat-square)
 ![LLM](https://img.shields.io/badge/-LLM-0d1117?style=flat-square)
+![LLM Evaluation](https://img.shields.io/badge/-LLM_Evaluation-0d1117?style=flat-square)
+![Quantization](https://img.shields.io/badge/-Quantization-0d1117?style=flat-square)
 ![Mechanistic Interpretability](https://img.shields.io/badge/-Mechanistic_Interpretability-0d1117?style=flat-square)
 ![Sparse Autoencoders](https://img.shields.io/badge/-Sparse_Autoencoders-0d1117?style=flat-square)
 ![TransformerLens](https://img.shields.io/badge/-TransformerLens-0d1117?style=flat-square)
@@ -123,10 +129,13 @@ Streams live market data via Kafka + Spark Structured Streaming into a Redshift 
 **Backend & Web**<br>
 ![Node.js](https://img.shields.io/badge/-Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=818cf8)
 ![Express](https://img.shields.io/badge/-Express-0d1117?style=flat-square&logo=express&logoColor=818cf8)
+![FastAPI](https://img.shields.io/badge/-FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=818cf8)
 ![React](https://img.shields.io/badge/-React-0d1117?style=flat-square&logo=react&logoColor=818cf8)
+![Next.js](https://img.shields.io/badge/-Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=818cf8)
 ![HTML5](https://img.shields.io/badge/-HTML5-0d1117?style=flat-square&logo=html5&logoColor=818cf8)
 ![CSS3](https://img.shields.io/badge/-CSS3-0d1117?style=flat-square&logo=css3&logoColor=818cf8)
 ![Docker](https://img.shields.io/badge/-Docker-0d1117?style=flat-square&logo=docker&logoColor=818cf8)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-0d1117?style=flat-square&logo=kubernetes&logoColor=818cf8)
 ![Redis](https://img.shields.io/badge/-Redis-0d1117?style=flat-square&logo=redis&logoColor=818cf8)
 ![Postman](https://img.shields.io/badge/-Postman-0d1117?style=flat-square&logo=postman&logoColor=818cf8)
 ![JWT](https://img.shields.io/badge/-JWT_Auth-0d1117?style=flat-square&logo=jsonwebtokens&logoColor=818cf8)
@@ -135,18 +144,23 @@ Streams live market data via Kafka + Spark Structured Streaming into a Redshift 
 ![System Design](https://img.shields.io/badge/-System_Design-0d1117?style=flat-square)
 ![Distributed Systems](https://img.shields.io/badge/-Distributed_Systems-0d1117?style=flat-square)
 ![CI/CD](https://img.shields.io/badge/-CI/CD-0d1117?style=flat-square)
+![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-0d1117?style=flat-square&logo=githubactions&logoColor=818cf8)
 ![OOP](https://img.shields.io/badge/-OOP-0d1117?style=flat-square)
 <br>
 
 **Cloud & Databases**<br>
 ![AWS](https://img.shields.io/badge/-AWS-0d1117?style=flat-square&logo=amazonaws&logoColor=818cf8)
 ![Amazon S3](https://img.shields.io/badge/-Amazon_S3-0d1117?style=flat-square&logo=amazons3&logoColor=818cf8)
+![Amazon EC2](https://img.shields.io/badge/-Amazon_EC2-0d1117?style=flat-square&logo=amazonec2&logoColor=818cf8)
 ![Redshift](https://img.shields.io/badge/-Redshift-0d1117?style=flat-square&logo=amazonaws&logoColor=818cf8)
 ![Athena](https://img.shields.io/badge/-Athena-0d1117?style=flat-square&logo=amazonaws&logoColor=818cf8)
 ![QuickSight](https://img.shields.io/badge/-QuickSight-0d1117?style=flat-square&logo=amazonaws&logoColor=818cf8)
 ![CloudWatch](https://img.shields.io/badge/-CloudWatch-0d1117?style=flat-square&logo=amazoncloudwatch&logoColor=818cf8)
+![GCP](https://img.shields.io/badge/-GCP_(GKE)-0d1117?style=flat-square&logo=googlecloud&logoColor=818cf8)
 ![MySQL](https://img.shields.io/badge/-MySQL-0d1117?style=flat-square&logo=mysql&logoColor=818cf8)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=818cf8)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-0d1117?style=flat-square&logo=mongodb&logoColor=818cf8)
+![ChromaDB](https://img.shields.io/badge/-ChromaDB-0d1117?style=flat-square)
 <br>
 
 **Analytics & Visualization**<br>
@@ -162,6 +176,8 @@ Streams live market data via Kafka + Spark Structured Streaming into a Redshift 
 ![GitHub](https://img.shields.io/badge/-GitHub-0d1117?style=flat-square&logo=github&logoColor=818cf8)
 ![Linux](https://img.shields.io/badge/-Linux-0d1117?style=flat-square&logo=linux&logoColor=818cf8)
 ![ROS](https://img.shields.io/badge/-ROS-0d1117?style=flat-square)
+![CMake](https://img.shields.io/badge/-CMake-0d1117?style=flat-square&logo=cmake&logoColor=818cf8)
+![pytest](https://img.shields.io/badge/-pytest-0d1117?style=flat-square&logo=pytest&logoColor=818cf8)
 <br>
 
 <br>
